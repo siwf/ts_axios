@@ -21,4 +21,16 @@ var sb = Color.RED;
 var sb1 = Color['RED'];
 var sb2 = Color[12];
 var sb3 = Color['RED'];
-console.log(sb, sb1);
+// any数据类型 跳过类型检查
+var notSure = 4;
+notSure = 's12';
+notSure = true;
+// void 类型
+// null 和 undefined 是所有类型的子类型
+function warnNothing() {
+}
+var unusable = undefined;
+var untouch = null;
+// let special2: null = 1
+var si = 3;
+si = null;

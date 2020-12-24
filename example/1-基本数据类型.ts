@@ -43,5 +43,16 @@ function warnNothing() :void {
 let unusable: void = undefined;
 let untouch: void = null;
 
+// never 
+function error(message: string): never {
+  throw new Error(message)
+}
+function fail() {
+  error('something failed!')
+}
 
-// let special2: null = 1
+// 函数声明
+declare function create(o: object | null): void;
+
+let someValue: any = 'this is a string!'
+
